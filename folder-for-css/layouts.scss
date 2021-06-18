@@ -1,18 +1,17 @@
 /* Content Wrap
 ###########################################################################  */
 
-.content-wrap{
+.content-wrap {
+  display: flex;
+  display: grid;
   width: 100vw;
   height: 100vh;
-  background-color: var(--light);
-
-  display: flex;
-  justify-content: center;
   align-items: center;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  background-color: var(--light);
   gap: 10px;
   grid-auto-rows: minmax(100px, auto);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .content-wrap:nth-child(even) {
@@ -22,22 +21,23 @@
 /* Card
 ###########################################################################  */
 
-.card{
+.card {
+  overflow: hidden;
   width: clamp(300px, 50%, 800px);
   background-color: var(--lightest);
   border-radius: var(--radius-m);
-  overflow: hidden;
   box-shadow: var(--n-shadow-l);
 }
 
-.card figcaption{
+.card figcaption {
   padding: var(--l) var(--m) var(--xl) var(--m);
 }
 
-.overview{
-  width: 100%;
+.overview {
   display: grid;
-  grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
-  /*repeat(3, 1fr);*/
+  width: 100%;
+
+  /* repeat(3, 1fr); */
   grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }

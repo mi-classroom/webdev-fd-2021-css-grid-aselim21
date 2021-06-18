@@ -20,12 +20,11 @@
 
   --color-text: var(--darker);
   --color-headline: var(--dark);
-  --color-accent: #F26D3D; /*#CE4BF2*/
-  --color-decoration: #3264A6; /*#3264A6*/
+  --color-accent: rgb(254,196,87);
 
-  --ff-normal: 'IBM Plex Sans', sans-serif;
-  --ff-serif: 'IBM Plex Serif', serif;
-  --fw-normal: 400;
+  --ff-normal: IBMPlexSans, sans-serif;
+  --ff-icons: MaterialIcons;
+  --fw-normal: 300;
   --fw-medium: 500;
   --fw-bold: 700;
   
@@ -36,14 +35,9 @@
   --tr-fast: 0.3s;
 
   --shadow-l: 0 0 10px rgba(0,0,0,0.5);
-  --n-shadow-l: 20px 20px 60px rgba(0,0,0,0.1),
-  -20px -20px 60px rgba(255,255,255,0.1); /* https://neumorphism.io/#e0e0e */
 
   --border-width-s: 1px;
   --border-width-m: 3px;
-
-  --radius-m: var(--m);
 }
-
 
 

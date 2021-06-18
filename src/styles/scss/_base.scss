@@ -1,0 +1,16 @@
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  padding: var(--xl);
+  font-family: var(--ff-normal);
+  color: var(--text-color);
+  line-height: var(--lh-normal);
+  background-color: rgb(182, 152, 17); 
+}
+
+h1, h2, h3{
+  margin-bottom: var(--m);
+}
