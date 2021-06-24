@@ -38,7 +38,7 @@ h2{
   font-size: var(--xxl);
   color: var(--color-accent);
   line-height: var(--lh-tight);
-  margin-bottom: var(--s);
+  margin-bottom: var(--xl)
 }
 
 h3{
@@ -50,8 +50,4 @@ h3{
 
 img{
   width: 100%;
-}
-
-p{
-  padding-left: var(--m);
 }

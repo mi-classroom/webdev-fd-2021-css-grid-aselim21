@@ -40,8 +40,9 @@ a:not([class]) {
 /* Make images easier to work with */
 img,
 picture {
+  display: block;
   max-width: 100%;
-  display: block; }
+  object-fit: cover; }
 
 /* Inherit fonts for inputs and buttons */
 input,
@@ -163,16 +164,76 @@ select {
     content: attr(data-icon); }
 
 * {
+  /* TODO: Zeigen */
   box-sizing: border-box; }
 
-body {
-  padding: var(--xl);
-  font-family: var(--ff-normal);
-  color: var(--text-color);
-  line-height: var(--lh-normal);
-  background-color: #b69811; }
+html {
+  scroll-behavior: smooth; }
 
-h1, h2, h3 {
-  margin-bottom: var(--m); }
+body {
+  font-family: var(--ff-normal);
+  font-weight: var(--fw-normal);
+  font-size: var(--m);
+  line-height: var(--lh-normal);
+  color: var(--color-text);
+  hyphens: auto;
+  background-color: var(--lightest); }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: var(--color-headline);
+  hyphens: none; }
+
+h1 {
+  font-size: var(--xxxl);
+  padding-top: var(--xxxl);
+  padding-bottom: var(--xxxl);
+  line-height: var(--lh-tight);
+  color: var(--dark);
+  padding-left: var(--m); }
+
+h2 {
+  padding-top: var(--m);
+  font-size: var(--xxl);
+  color: var(--color-accent);
+  line-height: var(--lh-tight);
+  margin-bottom: var(--s); }
+
+h3 {
+  padding-top: var(--xl);
+  font-size: var(--xl);
+  font-weight: normal;
+  margin-bottom: var(--xl); }
+
+img {
+  width: 100%; }
+
+p {
+  padding-left: var(--m); }
+
+.overview {
+  padding-left: var(--m);
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: repeat(auto-fit, minmax(1px, 1fr)); }
+  .overview .card {
+    position: relative;
+    width: clamp(100px, 50%, 500px);
+    overflow: auto;
+    background-color: #fff;
+    border-radius: var(--radius-l); }
+    .overview .card__additional-infos {
+      display: none; }
+    .overview .card__title {
+      color: white;
+      position: absolute;
+      top: 0;
+      padding-top: 1rem;
+      font-size: clamp(20px, 10%, 10px);
+      padding-left: 0.5rem; }
+      .overview .card__title p {
+        text-shadow: 1px 1px #000000; }
+      .overview .card__title h2 {
+        text-shadow: 1px 1px #000000; }
 
 /*# sourceMappingURL=main.css.map */
