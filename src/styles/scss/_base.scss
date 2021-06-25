@@ -15,6 +15,7 @@ body{
   color: var(--color-text);
   hyphens: auto;
   background-color: var(--lightest);
+  padding: var(--m);
 }
 
 
@@ -53,5 +54,5 @@ img{
 }
 
 p{
-  padding-left: var(--m);
+
 }

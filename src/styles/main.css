@@ -177,7 +177,8 @@ body {
   line-height: var(--lh-normal);
   color: var(--color-text);
   hyphens: auto;
-  background-color: var(--lightest); }
+  background-color: var(--lightest);
+  padding: var(--m); }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
@@ -208,22 +209,22 @@ h3 {
 img {
   width: 100%; }
 
-p {
-  padding-left: var(--m); }
-
 .overview {
   padding-left: var(--m);
   display: grid;
   grid-gap: 1px;
-  grid-template-columns: repeat(auto-fit, minmax(1px, 1fr)); }
+  grid-template-columns: repeat(auto-fit, minmax(calc(var(--m) * 15), 1fr)); }
   .overview .card {
     position: relative;
-    width: clamp(100px, 50%, 500px);
     overflow: auto;
     background-color: #fff;
     border-radius: var(--radius-l); }
     .overview .card__additional-infos {
       display: none; }
+    .overview .card img {
+      object-fit: cover;
+      max-height: 100px;
+      aspect-ratio: 1/1; }
     .overview .card__title {
       color: white;
       position: absolute;

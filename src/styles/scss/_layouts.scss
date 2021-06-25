@@ -6,15 +6,19 @@ $lightest: #fff;
     padding-left: var(--m);
     display:grid;
     grid-gap: 1px;
-    grid-template-columns: repeat(auto-fit, minmax(1px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(calc(var(--m) * 15), 1fr));
 .card {
     position: relative;
-    width: clamp(100px, 50%, 500px);
     overflow: auto;
     background-color: $lightest ;
     border-radius: var(--radius-l);
     &__additional-infos{
         display: none;
+    }
+    img{
+        object-fit: cover;
+        max-height: 100px;
+        aspect-ratio: 1/1;
     }
     &__title{
         color: white;
@@ -34,3 +38,4 @@ $lightest: #fff;
     }
 }
 }
+
